@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Domain.Domain.Recognize;
+using Domain.Domain.Recognize.Intents;
 
 namespace Domain.Domain
 {

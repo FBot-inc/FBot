@@ -60,8 +60,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Domain\IntentTests.cs" />
-    <Compile Include="Domain\TemplateTests.cs" />
+    <Compile Include="Domain\Recognize\Intents\IntentTests.cs" />
+    <Compile Include="Domain\Recognize\Templates\TemplateTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

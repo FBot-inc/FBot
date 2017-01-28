@@ -42,13 +42,15 @@
   <ItemGroup>
     <Compile Include="Domain\Bot.cs" />
     <Compile Include="Domain\ConnectData.cs" />
-    <Compile Include="Domain\Intent.cs" />
-    <Compile Include="Domain\IIntent.cs" />
+    <Compile Include="Domain\Recognize\Intents\Intent.cs" />
+    <Compile Include="Domain\Recognize\Intents\IIntent.cs" />
     <Compile Include="Domain\Links.cs" />
     <Compile Include="Domain\Message.cs" />
     <Compile Include="Domain\MessageGraph.cs" />
+    <Compile Include="Domain\Recognize\Templates\ITemplate.cs" />
+    <Compile Include="Domain\Recognize\RecognizeData.cs" />
     <Compile Include="Domain\Response.cs" />
-    <Compile Include="Domain\Template.cs" />
+    <Compile Include="Domain\Recognize\Templates\SimpleTemplate.cs" />
     <Compile Include="Domain\UserContext.cs" />
     <Compile Include="Factory\MessageGraphFacroty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

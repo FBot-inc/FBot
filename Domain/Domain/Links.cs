@@ -1,4 +1,7 @@
-﻿namespace Domain.Domain
+﻿using Domain.Domain.Recognize;
+using Domain.Domain.Recognize.Intents;
+
+namespace Domain.Domain
 {
     public class LinkFromIntentToMessage
     {

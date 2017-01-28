@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using Domain.Domain;
+using Domain.Domain.Recognize.Intents;
+using Domain.Domain.Recognize.Templates;
 using NUnit.Framework;
-using NUnit.Framework.Internal;
 
-namespace Domain.Test.Domain
+namespace Domain.Test.Domain.Recognize.Intents
 {
     [TestFixture]
     public class IntentTests
@@ -12,7 +12,7 @@ namespace Domain.Test.Domain
         public void AddTemplate_AddTemplate_ExceptedListShouldAddedTemplate()
         {
             var intent = new Intent();
-            var template = new Template("привет");
+            var template = new SimpleTemplate("привет");
 
             intent.AddTemplate(template);
 
@@ -25,7 +25,7 @@ namespace Domain.Test.Domain
         public void AddTemplate_AddSomeTemplateWithOneLink_ShouldAddedOneTemplate()
         {
             var intent = new Intent();
-            var template = new Template("asdf");
+            var template = new SimpleTemplate("asdf");
 
             intent.AddTemplate(template);
             intent.AddTemplate(template);
@@ -39,8 +39,8 @@ namespace Domain.Test.Domain
         public void AddTemplate_AddSomeTemplate_ShouldAddedOneTemplate()
         {
             var intent = new Intent();
-            var template = new Template("asdf");
-            var template1 = new Template("asdf");
+            var template = new SimpleTemplate("asdf");
+            var template1 = new SimpleTemplate("asdf");
 
             intent.AddTemplate(template);
             intent.AddTemplate(template1);
