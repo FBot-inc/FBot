@@ -7,6 +7,6 @@
 
     public interface IIntent
     {
-        bool Recognize(string message);
+        RecognizeData Recognize(string message);
     }
 }
