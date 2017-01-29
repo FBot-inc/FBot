@@ -1,4 +1,5 @@
 ﻿using System;
+using Domain.Domain.InformationContext;
 
 namespace Domain.Domain.BotMessage
 {

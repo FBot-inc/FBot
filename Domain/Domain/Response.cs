@@ -6,5 +6,5 @@ namespace Domain.Domain
     {
         public List<string> Messages = new List<string>();
         public bool IsError;
-    }
+    } 
 }

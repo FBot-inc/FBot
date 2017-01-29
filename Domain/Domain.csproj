@@ -45,7 +45,7 @@
     <Compile Include="Domain\BotMessage\BotMessageChain.cs" />
     <Compile Include="Domain\BotMessage\CompoundBotMessage.cs" />
     <Compile Include="Domain\BotMessage\IBotMessage.cs" />
-    <Compile Include="Domain\ITripleteSource.cs" />
+    <Compile Include="Domain\InformationContext\ITripleteSource.cs" />
     <Compile Include="Domain\ConnectData.cs" />
     <Compile Include="Domain\Recognize\Intents\Intent.cs" />
     <Compile Include="Domain\Recognize\Intents\IIntent.cs" />
@@ -60,7 +60,9 @@
     <Compile Include="Factory\MessageGraphFacroty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Domain\MessageGraph\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

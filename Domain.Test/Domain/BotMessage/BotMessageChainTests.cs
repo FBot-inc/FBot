@@ -44,18 +44,16 @@ namespace Domain.Test.Domain.BotMessage
 
             for (var i = 0; i < messages.Count; i++)
             {
-                if (messages[i].Equals(botMessage))
+                if (!messages[i].Equals(botMessage)) continue;
+
+                if (i == messages.Count - 1)
                 {
-                    if (i == messages.Count - 1)
-                    {
-                        Assert.IsTrue(false);
-                    }
-
-                    Assert.IsTrue(messages[i + 1].Equals(botMessage1));
-
-                    break;
+                    Assert.IsTrue(false);
                 }
 
+                Assert.IsTrue(messages[i + 1].Equals(botMessage1));
+
+                break;
             }
         }
     }
