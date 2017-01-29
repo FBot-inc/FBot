@@ -60,6 +60,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Domain\BotMessage\SimpleBotMessageTests.cs" />
     <Compile Include="Domain\Recognize\Intents\IntentTests.cs" />
     <Compile Include="Domain\Recognize\Templates\TemplateTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
