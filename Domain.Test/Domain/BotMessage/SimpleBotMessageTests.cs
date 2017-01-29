@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace Domain.Test.Domain.BotMessage
 {
     [TestFixture]
-    public class SimpleBotMessageTests
+    internal class SimpleBotMessageTests
     {
         [Test]
         public void Text_ComparisonParameterOfonstructorAndValueOfTextFiel_ExceptedEqual()

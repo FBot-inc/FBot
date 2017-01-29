@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Domain\Bot.cs" />
     <Compile Include="Domain\BotMessage\ SimpleBotMessage.cs" />
+    <Compile Include="Domain\BotMessage\BotMessageChain.cs" />
     <Compile Include="Domain\BotMessage\CompoundBotMessage.cs" />
     <Compile Include="Domain\BotMessage\IBotMessage.cs" />
     <Compile Include="Domain\ITripleteSource.cs" />
